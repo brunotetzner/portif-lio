@@ -5,6 +5,7 @@ export const theme = extendTheme({
   colors: {
     black: {
       primary: "#000000",
+      secondary: "rgb(11,7,7,0.6)",
     },
 
     red: {
@@ -40,6 +41,8 @@ export const theme = extendTheme({
     global: {
       body: {
         backgroundImage: `url(${Padrao_background})`,
+        backgroundSize: "cover",
+
         width: "50vw",
         color: "white.1",
       },
