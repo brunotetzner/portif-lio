@@ -10,8 +10,8 @@ export const ProjectsPage = () => {
       <Flex
         pt="5%"
         color="white.primary"
-        w="90vw"
-        ml="5vw"
+        w="95vw"
+        ml="2.5vw"
         flexDirection="column"
       >
         <Heading fontWeight="semibold" w="100%">

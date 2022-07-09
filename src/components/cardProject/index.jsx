@@ -60,6 +60,7 @@ export const CardProject = ({
           mt="10%"
           backgroundImage={screen}
           backgroundSize="cover"
+          backgroundPosition="center"
           borderRadius="2px"
           w="180px"
           ml="1px"

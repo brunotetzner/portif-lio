@@ -17,6 +17,22 @@ import PlantsBackground from "../assets/images/projectHelpMyPlants/background.sv
 import SelariaLogo from "../assets/images/projectSelariaSafira/logo.png";
 import SelariaBackground from "../assets/images/projectSelariaSafira/background.jpg";
 import SelariaScreen from "../assets/images/projectSelariaSafira/screen.png";
+
+import TorreScreen from "../assets/images/projectTorreDeHanoi/screen.png";
+import TorreBackground from "../assets/images/projectTorreDeHanoi/background.svg";
+
+import LabirintoBackground from "../assets/images/projectLabirinto/background.svg";
+import LabirintoScreen from "../assets/images/projectLabirinto/screen.png";
+
+import Lig4Background from "../assets/images/projectLig4/background.svg";
+import Lig4Screen from "../assets/images/projectLig4/screen.png";
+
+import PythonLogo from "../assets/images/projectsPython/logo.svg";
+import PythonBackground from "../assets/images/projectsPython/background.svg";
+
+import NodeLogo from "../assets/images/projectsNode/logo.svg";
+import NodeBackground from "../assets/images/projectsNode/background.svg";
+
 import { FaPython } from "react-icons/fa";
 import {
   SiFlask,
@@ -33,9 +49,10 @@ import {
   SiStyledcomponents,
   SiChakraui,
   SiRedux,
+  SiMongodb,
+  SiExpress,
+  SiSwagger,
 } from "react-icons/si";
-
-import { DiNodejs } from "react-icons/di";
 
 import { IoLogoNodejs } from "react-icons/io";
 export const projectsMock = [
@@ -96,6 +113,10 @@ export const projectsMock = [
       {
         name: "Heroku",
         Icon: SiHeroku(),
+      },
+      {
+        name: "Swagger",
+        Icon: SiSwagger(),
       },
       { name: "Docker", Icon: SiDocker() },
     ],
@@ -268,10 +289,10 @@ export const projectsMock = [
   },
   {
     name: "Torre de Hanoi",
-    logo: MarketLogo,
+    logo: "",
     logoSize: { width: 200, height: 60 },
-    screen: MarketScreen,
-    background: MarketBackground,
+    screen: TorreScreen,
+    background: TorreBackground,
     tecnologies: [
       {
         Icon: SiJavascript(),
@@ -292,15 +313,14 @@ export const projectsMock = [
     deployLink:
       "https://kenzie-academy-brasil-developers.github.io/entrega-torre-de-hanoi-sprint-5-brunotetzner/",
     color: "#BF3434",
-    description:
-      "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
+    description: "Uma versão do game torre de hanoi desenvolvida para web",
   },
   {
     name: "The azkaban lig-4",
-    logo: MarketLogo,
+    logo: "",
     logoSize: { width: 200, height: 60 },
-    screen: MarketScreen,
-    background: MarketBackground,
+    screen: Lig4Screen,
+    background: Lig4Background,
     tecnologies: [
       {
         Icon: SiJavascript(),
@@ -321,15 +341,14 @@ export const projectsMock = [
     deployLink:
       "https://kenzie-academy-brasil-developers.github.io/entrega-lig-4-sprint-5-liviavrodrigues/",
     color: "#BF3434",
-    description:
-      "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
+    description: "Uma versão do game lig-4 desenvolvida para web.",
   },
   {
     name: "Labirinto",
-    logo: MarketLogo,
+    logo: "",
     logoSize: { width: 200, height: 60 },
-    screen: MarketScreen,
-    background: MarketBackground,
+    screen: LabirintoScreen,
+    background: LabirintoBackground,
     tecnologies: [
       {
         Icon: SiJavascript(),
@@ -351,6 +370,164 @@ export const projectsMock = [
       "https://kenzie-academy-brasil-developers.github.io/entrega-labirinto-sprint-5-brunotetzner/",
     color: "#BF3434",
     description:
-      "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
+      "Mini game de labirinto com a temática dos filmes do Senhor dos anéis",
+  },
+
+  {
+    name: "Blog Posts(API)",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: PythonLogo,
+    background: PythonBackground,
+    tecnologies: [
+      {
+        Icon: FaPython(),
+        name: "Python",
+      },
+      {
+        Icon: SiFlask(),
+        name: "Flask",
+      },
+
+      { Icon: SiMongodb(), name: "MongoDB" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/q3-sprint3-crud-nosql-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description:
+      "Api desenvolvida com o propósito simular o fluxo de um api de um blog. A API cria, lista, edita e apaga posts.",
+  },
+  {
+    name: "Vacinação(API)",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: PythonLogo,
+    background: PythonBackground,
+    tecnologies: [
+      {
+        Icon: FaPython(),
+        name: "Python",
+      },
+      {
+        Icon: SiPostgresql(),
+        name: "PostgreSQL",
+      },
+
+      { Icon: SiFlask(), name: "Flask" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/q3-sprint5-vacinacao-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description:
+      "Api desenvolvida com o propósito de registrar e listar pessoas que tomaram vacina.",
+  },
+  {
+    name: "Leads",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: PythonLogo,
+    background: PythonBackground,
+    tecnologies: [
+      {
+        Icon: FaPython(),
+        name: "Python",
+      },
+      {
+        Icon: SiPostgresql(),
+        name: "PostgreSQL",
+      },
+
+      { Icon: SiFlask(), name: "Flask" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/q3-sprint5-leads-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description: "Um crud simples de usuários",
+  },
+  {
+    name: "Matriz de eisenhower",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: PythonLogo,
+    background: PythonBackground,
+    tecnologies: [
+      {
+        Icon: FaPython(),
+        name: "Python",
+      },
+      {
+        Icon: SiPostgresql(),
+        name: "PostgreSQL",
+      },
+
+      { Icon: SiFlask(), name: "Flask" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/q3-sprint5-matriz-eisenhower-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description:
+      "Uma api funcional da famosa matriz de eisenhower, uma maneira de se organizar desenvolvida pelo presidente americano Dwight D. Eisenhower.",
+  },
+
+  {
+    name: "Crud de usuários",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: NodeLogo,
+    background: NodeBackground,
+    tecnologies: [
+      {
+        Icon: SiTypescript(),
+        name: "Typescript",
+      },
+      {
+        Icon: SiPostgresql(),
+        name: "PostgreSQL",
+      },
+
+      { Icon: IoLogoNodejs(), name: "Nodejs" },
+      { Icon: SiExpress(), name: "ExpressJS" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/sprint5-entrega-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description: "Um CRUD de usuários com nodeJS",
+  },
+  {
+    name: "API de loja de DVD",
+    logo: "",
+    logoSize: { width: 200, height: 60 },
+    screen: NodeLogo,
+    background: NodeBackground,
+    tecnologies: [
+      {
+        Icon: SiTypescript(),
+        name: "Typescript",
+      },
+      {
+        Icon: SiPostgresql(),
+        name: "PostgreSQL",
+      },
+
+      { Icon: IoLogoNodejs(), name: "Nodejs" },
+      { Icon: SiExpress(), name: "ExpressJS" },
+    ],
+    githubLink:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/sprint5-entrega-brunotetzner",
+    figmaLink: "",
+    deployLink: "",
+    color: "#E8E531",
+    description:
+      "Uma api de venda de dvds com autenticação de usuários(admin ou clientes)",
   },
 ];
