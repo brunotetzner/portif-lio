@@ -40,10 +40,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundImage: `url(${Padrao_background})`,
-        backgroundSize: "cover",
 
-        width: "50vw",
         color: "white.1",
       },
     },

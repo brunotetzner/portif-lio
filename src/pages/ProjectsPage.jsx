@@ -1,12 +1,81 @@
 import { CardProject } from "../components/cardProject";
 import { projectsMock } from "../mocks/projects";
 import { Header } from "../components/header";
-import { Flex, Heading, Box } from "@chakra-ui/react";
-
+import { Flex, Heading, Box, Center, Input, Button } from "@chakra-ui/react";
+import { BiSearch } from "react-icons/bi";
+import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
+import { useState } from "react";
+import HeaderImage from "../assets/images/background-header.svg";
 export const ProjectsPage = () => {
+  const [value, setValue] = useState("Front End");
+  console.log(value);
+
   return (
-    <>
-      <Header />
+    <Box background="radial-gradient(circle, rgba(45,46,75,1) 0%, rgba(13,14,24,1) 51%, rgba(45,46,75,1) 100%)">
+      <Box
+        maxWidth="100vw"
+        display="flex"
+        flexDirection="column"
+        backgroundImage={HeaderImage}
+        backgroundSize="cover"
+      >
+        <Header />
+        <Flex
+          h="300px"
+          flexDirection="row"
+          alignItems="center"
+          w="80vw"
+          color="white.primary"
+          ml="10vw"
+        >
+          <Heading fontWeight="semibold" w="100%">
+            Projetos
+          </Heading>
+          <Center w="70%">
+            <Input
+              placeholder="pesquisar por projeto"
+              mr="1%"
+              bg="white.primary"
+            />
+            <Button
+              bg="none"
+              border="1px solid"
+              borderColor="white.primary"
+              color="white.primary"
+              fontSize="20px"
+              fontWeight="800"
+            >
+              <BiSearch />
+            </Button>
+          </Center>
+        </Flex>
+        <Box
+          w="100%"
+          bg="rgb(28, 28, 33,0.7)"
+          h="38px"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          color="white.primary"
+        >
+          <RadioGroup onChange={setValue} value={value} w="70%">
+            <Stack direction="row" w="100%">
+              <Radio colorScheme="purple" value="All" pl="12%">
+                Tudo
+              </Radio>
+              <Radio colorScheme="purple" value="Front End" pl="12%">
+                Front End
+              </Radio>
+              <Radio colorScheme="purple" value="Back End" pl="12%">
+                Back End
+              </Radio>
+              <Radio colorScheme="purple" value="Full Stack" pl="12%">
+                Full Stack
+              </Radio>
+            </Stack>
+          </RadioGroup>
+        </Box>
+      </Box>
       <Flex
         pt="5%"
         color="white.primary"
@@ -14,9 +83,6 @@ export const ProjectsPage = () => {
         ml="2.5vw"
         flexDirection="column"
       >
-        <Heading fontWeight="semibold" w="100%">
-          Projetos
-        </Heading>
         <Box w="100%" display="flex" flexWrap="wrap">
           {projectsMock.map((project) => (
             <CardProject
@@ -35,6 +101,6 @@ export const ProjectsPage = () => {
           ))}
         </Box>
       </Flex>
-    </>
+    </Box>
   );
 };

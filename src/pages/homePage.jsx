@@ -2,9 +2,10 @@ import { Header } from "../components/header";
 import { Box, Flex, Center, Img, Text, Tooltip } from "@chakra-ui/react";
 import DevImg from "../assets/images/bruno-tetzner.svg";
 import { icons } from "../mocks/icons";
+import Background from "../assets/images/home-background.svg"
 export const HomePage = () => {
   return (
-    <>
+    <Box backgroundImage={Background} backgroundSize="cover" backgroundPosition="center" h="100vh" w="100vw">
       <Header />
       <Box w="95vw" h="68vh" m="2.5vw" display="flex" flexDirection="row">
         <Flex
@@ -44,6 +45,6 @@ export const HomePage = () => {
           </Flex>
         </Center>
       </Box>
-    </>
+    </Box>
   );
 };

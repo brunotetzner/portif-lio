@@ -57,6 +57,7 @@ export const CardProject = ({
         {figmaLink ? (
           <Link
             href={figmaLink}
+            target="blank"
             mt="10%"
             backgroundImage={screen}
             backgroundSize="cover"
@@ -95,6 +96,7 @@ export const CardProject = ({
         <Flex w="100%" justifyContent="space-around" alignItems="center">
           <Link
             href={githubLink}
+            target="blank"
             bg="none"
             display="flex"
             flexDirection="column"
@@ -112,6 +114,7 @@ export const CardProject = ({
           {deployLink && (
             <Link
               href={deployLink}
+              target="blank"
               bg="none"
               display="flex"
               flexDirection="column"
