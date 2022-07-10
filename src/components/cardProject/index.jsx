@@ -3,9 +3,7 @@ import {
   Flex,
   Heading,
   Image,
-  HStack,
   Center,
-  Button,
   Text,
   Tooltip,
   Link,
@@ -28,9 +26,9 @@ export const CardProject = ({
 }) => {
   return (
     <Box
-      w="45%"
-      mt="3.25%"
-      ml="3.25%"
+      w="30%"
+      mt="2%"
+      ml="2%"
       display="flex"
       flexDirecion="row"
       height="250px"
@@ -42,6 +40,7 @@ export const CardProject = ({
         h="100%"
         bg="black.secondary"
         flexDirection="column"
+        justifyContent="space-between"
         padding="1%"
         borderRight="1px solid"
         borderRightColor={color}
@@ -55,38 +54,45 @@ export const CardProject = ({
         >
           {name}
         </Heading>
-        <Link
-          href={figmaLink}
-          mt="10%"
-          backgroundImage={screen}
-          backgroundSize="cover"
-          backgroundPosition="center"
-          borderRadius="2px"
-          w="180px"
-          ml="1px"
-          h="125px"
-        >
-          <Box
-            borderRadius="2px"
-            bg="none"
-            w="100%"
-            h="100%"
-            _hover={{
-              backgroundImage: FigmaBack,
-              border: "1px solid",
-              borderColor: "white.primary",
-            }}
+        {figmaLink ? (
+          <Link
+            href={figmaLink}
+            mt="10%"
+            backgroundImage={screen}
             backgroundSize="cover"
             backgroundPosition="center"
+            borderRadius="2px"
+            w="125px"
+            ml="1px"
+            h="90px"
+          >
+            <Box
+              borderRadius="2px"
+              bg="none"
+              w="100%"
+              h="100%"
+              _hover={{
+                backgroundImage: FigmaBack,
+                border: "1px solid",
+                borderColor: "white.primary",
+              }}
+              backgroundSize="cover"
+              backgroundPosition="center"
+            />
+          </Link>
+        ) : (
+          <Box
+            borderRadius="2px"
+            w="125px"
+            ml="1px"
+            h="90px"
+            backgroundImage={screen}
+            backgroundPosition="center"
+            backgroundSize="cover"
           />
-        </Link>
+        )}
 
-        <Flex
-          w="100%"
-          justifyContent="space-around"
-          alignItems="center"
-          pt="10%"
-        >
+        <Flex w="100%" justifyContent="space-around" alignItems="center">
           <Link
             href={githubLink}
             bg="none"
