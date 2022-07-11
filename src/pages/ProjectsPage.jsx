@@ -1,18 +1,14 @@
 import { CardProject } from "../components/cardProject";
 import { projectsMock } from "../mocks/projects";
 import { Header } from "../components/header";
-import { Flex, Heading, Box, Center, Input, Button } from "@chakra-ui/react";
-import { BiSearch } from "react-icons/bi";
-import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
+import { Flex, Heading, Box, Radio, RadioGroup, Stack, useToast} from "@chakra-ui/react";
 import { useState, useEffect } from "react";
-import { useToast } from "@chakra-ui/react";
 import HeaderImage from "../assets/images/background-header.png";
 
 export const ProjectsPage = () => {
   const toast = useToast();
   const [typeProject, setTypeProject] = useState("All");
   const [currentProjects, setCurrentProjects] = useState([]);
-  const [inputValue, setInputValue] = useState([]);
 
   useEffect(() => {
     setCurrentProjects(
@@ -24,30 +20,6 @@ export const ProjectsPage = () => {
   }, [typeProject]);
 
 
-
-
-  const filterProjects = () => {
-    const filteredProjects = projectsMock.filter((project) =>
-    project.name
-      .toLocaleLowerCase()
-      .includes(inputValue.toLocaleLowerCase())
-    )
-    setCurrentProjects(filteredProjects);
-    
-    console.log(currentProjects)
-
-    if (currentProjects.length === 0) {
-      setCurrentProjects(projectsMock);
-      toast({
-        title: "Nenhum Resultado",
-        description:
-          "Nenhum projeto correspondente o valor procurado foi encontrado.",
-        status: "error",
-        duration: 3000,
-        isClosable: true,
-      });
-    }
-  };
 
   return (
     <Box background="radial-gradient(circle, rgba(45,46,75,1) 0%, rgba(13,14,24,1) 51%, rgba(45,46,75,1) 100%)">
@@ -67,29 +39,11 @@ export const ProjectsPage = () => {
           color="white.primary"
           ml="10vw"
         >
-          <Heading fontWeight="semibold" w="100%">
+          <Heading fontWeight="light" w="100%" fontSize="80px">
             Projetos
           </Heading>
-          {/* <Center w="70%">
-            <Input
-              color="black"
-              onChange={(evt) => setInputValue(evt.target.value)}
-              placeholder="pesquisar por projeto"
-              mr="1%"
-              bg="white.primary"
-            />
-            <Button
-              onClick={filterProjects}
-              bg="none"
-              border="1px solid"
-              borderColor="white.primary"
-              color="white.primary"
-              fontSize="20px"
-              fontWeight="800"
-            >
-              <BiSearch />
-            </Button>
-          </Center> */}
+   
+         
         </Flex>
         <Box
           w="100%"
