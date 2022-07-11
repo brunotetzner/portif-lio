@@ -1,4 +1,4 @@
-FROM node:16.15.0
+FROM node:17.8.0
 WORKDIR /app
 COPY package*.json ./
 RUN yarn 
