@@ -79,6 +79,7 @@ export const CardProject = ({
               }}
               backgroundSize="cover"
               backgroundPosition="center"
+              background-repeat="no-repeat"
             />
           </Link>
         ) : (

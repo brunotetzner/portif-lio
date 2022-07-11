@@ -6,7 +6,8 @@ import { BiSearch } from "react-icons/bi";
 import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { useToast } from "@chakra-ui/react";
-import HeaderImage from "../assets/images/background-header.svg";
+import HeaderImage from "../assets/images/background-header.png";
+
 export const ProjectsPage = () => {
   const toast = useToast();
   const [typeProject, setTypeProject] = useState("All");

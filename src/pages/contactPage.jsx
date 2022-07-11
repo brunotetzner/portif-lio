@@ -1,7 +1,7 @@
 import { Header } from "../components/header";
 import { Box, Text, Link, Heading } from "@chakra-ui/react";
 
-import Background from "../assets/images/home-background.svg";
+import Background from "../assets/images/background-home.jpg";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";

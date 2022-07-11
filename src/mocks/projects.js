@@ -1,18 +1,18 @@
 import MarketLogo from "../assets/images/projectMiniMarket/minimarketLogo.svg";
-import MarketBackground from "../assets/images/projectMiniMarket/minimarketBackground.svg";
-import MarketScreen from "../assets/images/projectMiniMarket/minimarketScreen.svg";
+import MarketBackground from "../assets/images/projectMiniMarket/background.png";
+import MarketScreen from "../assets/images/projectMiniMarket/screen.png";
 
 import HabbitLogo from "../assets/images/projectHappyHabbits/logo.svg";
-import HabbitScreen from "../assets/images/projectHappyHabbits/screen.svg";
-import HabbitBackground from "../assets/images/projectHappyHabbits/background.svg";
+import HabbitScreen from "../assets/images/projectHappyHabbits/screen.png";
+import HabbitBackground from "../assets/images/projectHappyHabbits/background.png";
 
 import BurguerLogo from "../assets/images/projectBurguerKenzie/logo.svg";
-import BurguerScreen from "../assets/images/projectBurguerKenzie/screen.svg";
+import BurguerScreen from "../assets/images/projectBurguerKenzie/screen.png";
 import BurguerBackground from "../assets/images/projectBurguerKenzie/background.svg";
 
 import PlantsLogo from "../assets/images/projectHelpMyPlants/logo.svg";
-import PlantsScreen from "../assets/images/projectHelpMyPlants/screen.svg";
-import PlantsBackground from "../assets/images/projectHelpMyPlants/background.svg";
+import PlantsScreen from "../assets/images/projectHelpMyPlants/screen.png";
+import PlantsBackground from "../assets/images/projectHelpMyPlants/background.png";
 
 import SelariaLogo from "../assets/images/projectSelariaSafira/logo.png";
 import SelariaBackground from "../assets/images/projectSelariaSafira/background.jpg";
@@ -24,7 +24,7 @@ import TorreBackground from "../assets/images/projectTorreDeHanoi/background.svg
 import LabirintoBackground from "../assets/images/projectLabirinto/background.svg";
 import LabirintoScreen from "../assets/images/projectLabirinto/screen.png";
 
-import Lig4Background from "../assets/images/projectLig4/background.svg";
+import Lig4Background from "../assets/images/projectLig4/background.png";
 import Lig4Screen from "../assets/images/projectLig4/screen.png";
 
 import PythonLogo from "../assets/images/projectsPython/logo.svg";
