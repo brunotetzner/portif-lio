@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Center, Input } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Center } from "@chakra-ui/react";
 import Logo from "../../assets/images/header-logo.svg";
 import { useNavigate } from "react-router-dom";
 export const Header = () => {
@@ -14,7 +14,6 @@ export const Header = () => {
       alignItems="center"
     >
       <Center w="40%">
-
         <Button
           variant="link"
           onClick={() => navigate("/home")}
@@ -23,13 +22,11 @@ export const Header = () => {
         >
           Sobre mim
         </Button>
-          </Center>
-        <Center h="100%" >
-      <Image h="100%" src={Logo}  />
-          </Center>
-          <Flex w="40%" justifyContent="space-evenly">
-
-
+      </Center>
+      <Center h="100%">
+        <Image h="100%" src={Logo} />
+      </Center>
+      <Flex w="40%" justifyContent="space-evenly">
         <Button
           variant="link"
           bg="none"
@@ -38,18 +35,16 @@ export const Header = () => {
         >
           Projetos
         </Button>
- 
 
-      <Button
+        <Button
           variant="link"
-
           onClick={() => navigate("/contact")}
           color="white.primary"
           // ml="5%"
-          >
-        Contato
-      </Button>
-        </Flex>
+        >
+          Contato
+        </Button>
+      </Flex>
     </Box>
   );
 };

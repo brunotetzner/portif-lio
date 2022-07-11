@@ -57,6 +57,7 @@ import {
 import { IoLogoNodejs } from "react-icons/io";
 export const projectsMock = [
   {
+    type: "Back End",
     name: "Mini Market(api)",
     logo: MarketLogo,
     logoSize: { width: 200, height: 60 },
@@ -88,6 +89,7 @@ export const projectsMock = [
       "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
   },
   {
+    type: "Back End",
     name: "Mini Market NodeJs(api)",
     logo: MarketLogo,
     logoSize: { width: 200, height: 60 },
@@ -130,6 +132,7 @@ export const projectsMock = [
       "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
   },
   {
+    type: "Full Stack",
     name: "Happy Habbits",
     logo: HabbitLogo,
     logoSize: { width: 200, height: 65 },
@@ -171,6 +174,7 @@ export const projectsMock = [
   },
   {
     name: "Help My plants",
+    type: "Full Stack",
     logo: PlantsLogo,
     logoSize: { width: 107, height: 60 },
     screen: PlantsScreen,
@@ -211,6 +215,7 @@ export const projectsMock = [
   },
   {
     name: "Burguer Kenzie",
+    type: "Full Stack",
     logo: BurguerLogo,
     logoSize: { width: 150, height: 40 },
     screen: BurguerScreen,
@@ -249,6 +254,7 @@ export const projectsMock = [
   },
   {
     name: "Selaria Safira",
+    type: "Front End",
     logo: SelariaLogo,
     logoSize: { width: 200, height: 40 },
     screen: SelariaScreen,
@@ -289,6 +295,7 @@ export const projectsMock = [
   },
   {
     name: "Torre de Hanoi",
+    type: "Front End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: TorreScreen,
@@ -317,6 +324,7 @@ export const projectsMock = [
   },
   {
     name: "The azkaban lig-4",
+    type: "Front End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: Lig4Screen,
@@ -345,6 +353,7 @@ export const projectsMock = [
   },
   {
     name: "Labirinto",
+    type: "Front End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: LabirintoScreen,
@@ -375,6 +384,7 @@ export const projectsMock = [
 
   {
     name: "Blog Posts(API)",
+    type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: PythonLogo,
@@ -401,6 +411,7 @@ export const projectsMock = [
   },
   {
     name: "Vacinação(API)",
+    type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: PythonLogo,
@@ -427,6 +438,7 @@ export const projectsMock = [
   },
   {
     name: "Leads",
+    type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: PythonLogo,
@@ -452,6 +464,7 @@ export const projectsMock = [
   },
   {
     name: "Matriz de eisenhower",
+    type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: PythonLogo,
@@ -479,6 +492,7 @@ export const projectsMock = [
 
   {
     name: "Crud de usuários",
+    type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: NodeLogo,
@@ -505,6 +519,8 @@ export const projectsMock = [
   },
   {
     name: "API de loja de DVD",
+    type: "Back End",
+
     logo: "",
     logoSize: { width: 200, height: 60 },
     screen: NodeLogo,

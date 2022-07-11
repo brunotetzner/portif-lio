@@ -4,11 +4,44 @@ import { Header } from "../components/header";
 import { Flex, Heading, Box, Center, Input, Button } from "@chakra-ui/react";
 import { BiSearch } from "react-icons/bi";
 import { Radio, RadioGroup, Stack } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useToast } from "@chakra-ui/react";
 import HeaderImage from "../assets/images/background-header.svg";
 export const ProjectsPage = () => {
-  const [value, setValue] = useState("Front End");
-  console.log(value);
+  const toast = useToast();
+  const [typeProject, setTypeProject] = useState("All");
+  const [currentProjects, setCurrentProjects] = useState([]);
+  const [inputValue, setInputValue] = useState([]);
+
+  useEffect(() => {
+    setCurrentProjects(
+      projectsMock.filter((project) => project.type === typeProject)
+    );
+    if (typeProject === "All") {
+      setCurrentProjects(projectsMock);
+    }
+  }, [typeProject]);
+
+  const filterProjects = () => {
+    setCurrentProjects(
+      projectsMock.filter((project) =>
+        project.name
+          .toLocaleLowerCase()
+          .includes(inputValue.toLocaleLowerCase())
+      )
+    );
+    if (currentProjects.length === 0) {
+      setCurrentProjects(projectsMock);
+      toast({
+        title: "Nenhum Resultado",
+        description:
+          "Nenhum projeto correspondente o valor procurado foi encontrado.",
+        status: "error",
+        duration: 3000,
+        isClosable: true,
+      });
+    }
+  };
 
   return (
     <Box background="radial-gradient(circle, rgba(45,46,75,1) 0%, rgba(13,14,24,1) 51%, rgba(45,46,75,1) 100%)">
@@ -33,11 +66,14 @@ export const ProjectsPage = () => {
           </Heading>
           <Center w="70%">
             <Input
+              color="black"
+              onChange={(evt) => setInputValue(evt.target.value)}
               placeholder="pesquisar por projeto"
               mr="1%"
               bg="white.primary"
             />
             <Button
+              onClick={filterProjects}
               bg="none"
               border="1px solid"
               borderColor="white.primary"
@@ -58,7 +94,7 @@ export const ProjectsPage = () => {
           alignItems="center"
           color="white.primary"
         >
-          <RadioGroup onChange={setValue} value={value} w="70%">
+          <RadioGroup onChange={setTypeProject} value={typeProject} w="70%">
             <Stack direction="row" w="100%">
               <Radio colorScheme="purple" value="All" pl="12%">
                 Tudo
@@ -84,7 +120,7 @@ export const ProjectsPage = () => {
         flexDirection="column"
       >
         <Box w="100%" display="flex" flexWrap="wrap">
-          {projectsMock.map((project) => (
+          {currentProjects.map((project) => (
             <CardProject
               name={project.name}
               background={project.background}
@@ -101,6 +137,7 @@ export const ProjectsPage = () => {
           ))}
         </Box>
       </Flex>
+      <Box w="100%" h="50px"></Box>
     </Box>
   );
 };

@@ -1,5 +1,4 @@
 import { extendTheme, theme as ChakraTheme } from "@chakra-ui/react";
-import Padrao_background from "../assets/images/background-red.jpg";
 
 export const theme = extendTheme({
   colors: {
@@ -40,7 +39,6 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-
         color: "white.1",
       },
     },

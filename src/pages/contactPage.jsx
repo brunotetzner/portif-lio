@@ -1,13 +1,5 @@
 import { Header } from "../components/header";
-import {
-  Center,
-  Box,
-  Flex,
-  Button,
-  Text,
-  Link,
-  Heading,
-} from "@chakra-ui/react";
+import { Box, Text, Link, Heading } from "@chakra-ui/react";
 
 import Background from "../assets/images/home-background.svg";
 import { AiOutlineLinkedin } from "react-icons/ai";

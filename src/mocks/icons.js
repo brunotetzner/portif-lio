@@ -2,7 +2,6 @@ import { FaPython } from "react-icons/fa";
 import {
   SiFlask,
   SiPostgresql,
-  SiHeroku,
   SiTypescript,
   SiJest,
   SiDocker,
@@ -10,13 +9,9 @@ import {
   SiHtml5,
   SiCss3,
   SiReact,
-  SiMaterialui,
   SiStyledcomponents,
   SiChakraui,
-  SiRedux,
-  SiMongodb,
   SiExpress,
-  SiSwagger,
 } from "react-icons/si";
 
 import { IoLogoNodejs } from "react-icons/io";
