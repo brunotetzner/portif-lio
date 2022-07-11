@@ -24,10 +24,9 @@ export const HomePage = () => {
           <Img w="100px" h="100px" src={DevImg} />
 
           <Text color="white.primary" pl="5%" pr="5%" pb="5%" mt="2%">
-            Tecnico em mecatrônica, desenvolvedor Full Stack e leitor nas horas
-            vagas. Ou melhor, quando os bugs de código dão tregua. Me interesso
-            por tecnologia desde cedo, como toda criança nascida nos anos 2000.
-            Mas decidi entrar na área durante a pandemia. O boom das plataformas
+            Tecnico em mecatrônica e desenvolvedor Full Stack. Me interesso
+            por tecnologia desde cedo, como toda criança nascida nos anos 2000,
+            mas decidi entrar na área durante a pandemia. O boom das plataformas
             web/mobile e do mercado de tecnologia em geral foram ainda mais
             acentuadas nesse periodo. Como moro em uma cidade no interior,
             diversos serviços que já eram feitos remotamente em grandes

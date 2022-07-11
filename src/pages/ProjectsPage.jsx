@@ -23,14 +23,19 @@ export const ProjectsPage = () => {
     }
   }, [typeProject]);
 
+
+
+
   const filterProjects = () => {
-    setCurrentProjects(
-      projectsMock.filter((project) =>
-        project.name
-          .toLocaleLowerCase()
-          .includes(inputValue.toLocaleLowerCase())
-      )
-    );
+    const filteredProjects = projectsMock.filter((project) =>
+    project.name
+      .toLocaleLowerCase()
+      .includes(inputValue.toLocaleLowerCase())
+    )
+    setCurrentProjects(filteredProjects);
+    
+    console.log(currentProjects)
+
     if (currentProjects.length === 0) {
       setCurrentProjects(projectsMock);
       toast({
@@ -65,7 +70,7 @@ export const ProjectsPage = () => {
           <Heading fontWeight="semibold" w="100%">
             Projetos
           </Heading>
-          <Center w="70%">
+          {/* <Center w="70%">
             <Input
               color="black"
               onChange={(evt) => setInputValue(evt.target.value)}
@@ -84,7 +89,7 @@ export const ProjectsPage = () => {
             >
               <BiSearch />
             </Button>
-          </Center>
+          </Center> */}
         </Flex>
         <Box
           w="100%"
@@ -120,7 +125,7 @@ export const ProjectsPage = () => {
         ml="2.5vw"
         flexDirection="column"
       >
-        <Box w="100%" display="flex" flexWrap="wrap">
+        <Box w="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly">
           {currentProjects.map((project) => (
             <CardProject
               name={project.name}

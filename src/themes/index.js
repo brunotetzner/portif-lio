@@ -40,6 +40,17 @@ export const theme = extendTheme({
     global: {
       body: {
         color: "white.1",
+          '&::-webkit-scrollbar': {
+            width: '4px',
+          },
+          '&::-webkit-scrollbar-track': {
+            width: '6px',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            background: "#7C2492",
+            borderRadius: '24px',
+          },
+        
       },
     },
   },

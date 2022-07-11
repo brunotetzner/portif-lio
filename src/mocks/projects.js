@@ -58,7 +58,7 @@ import { IoLogoNodejs } from "react-icons/io";
 export const projectsMock = [
   {
     type: "Back End",
-    name: "Mini Market(api)",
+    name: "Mini Market(API)",
     logo: MarketLogo,
     logoSize: { width: 200, height: 60 },
     screen: MarketScreen,
@@ -90,7 +90,7 @@ export const projectsMock = [
   },
   {
     type: "Back End",
-    name: "Mini Market NodeJs(api)",
+    name: "Mini Market 2.0(API)",
     logo: MarketLogo,
     logoSize: { width: 200, height: 60 },
     screen: MarketScreen,
@@ -156,6 +156,10 @@ export const projectsMock = [
         name: "ReactJS",
       },
       {
+        name: "NodeJS",
+        Icon: IoLogoNodejs(),
+      },
+      {
         Icon: SiMaterialui(),
         name: "Material.ui",
       },
@@ -170,7 +174,7 @@ export const projectsMock = [
     deployLink: "https://projeto-habitos.vercel.app/",
     color: "#FFB851",
     description:
-      "Construa novos habitos de maneira com o apoio dessa plataforma. Participe de grupos para impulsionar o processo.",
+      "Construa novos habitos de maneira simples com o apoio dessa plataforma. Participe de grupos para impulsionar o processo.",
   },
   {
     name: "Help My plants",
@@ -193,6 +197,10 @@ export const projectsMock = [
         name: "CSS3",
       },
       {
+        name: "NodeJS",
+        Icon: IoLogoNodejs(),
+      },
+      {
         Icon: SiReact(),
         name: "ReactJS",
       },
@@ -211,7 +219,7 @@ export const projectsMock = [
     deployLink: "https://help-my-plants-brenobcos.vercel.app/",
     color: "#EAFBF2",
     description:
-      "Aprenda  a cuidade de suas plantas. Registre e gerencie os cuidados com suas plantas.",
+      "Aprenda a cuidar de suas plantas. Registre e gerencie os cuidados com as suas plantas.",
   },
   {
     name: "Burguer Kenzie",
@@ -234,6 +242,10 @@ export const projectsMock = [
         name: "CSS3",
       },
       {
+        name: "NodeJS",
+        Icon: IoLogoNodejs(),
+      },
+      {
         Icon: SiReact(),
         name: "ReactJS",
       },
@@ -250,7 +262,7 @@ export const projectsMock = [
       "https://react-entrega-s5-hamburgueria-2-0-com-typescript-j-brunotetzner.vercel.app/",
     color: "#27AE60",
     description:
-      "Gerencie as vendas do seu mercado, e tenha um histórico de  vendas/clientes",
+      "Compre sanduiches e refrigerantes nessa plataforma.",
   },
   {
     name: "Selaria Safira",
@@ -273,6 +285,10 @@ export const projectsMock = [
         name: "CSS3",
       },
       {
+        name: "NodeJS",
+        Icon: IoLogoNodejs(),
+      },
+      {
         Icon: SiReact(),
         name: "ReactJS",
       },
@@ -291,7 +307,7 @@ export const projectsMock = [
     deployLink:
       "https://react-entrega-s3-kenzieshop-brunotetzner-brunotetzner.vercel.app/",
     color: "rgb(229, 135, 0)",
-    description: "Compre produtos para seu cavalo aqui.",
+    description: "Compre artigos de equitação para o seu cavalo aqui.",
   },
   {
     name: "Torre de Hanoi",
@@ -349,7 +365,7 @@ export const projectsMock = [
     deployLink:
       "https://kenzie-academy-brasil-developers.github.io/entrega-lig-4-sprint-5-liviavrodrigues/",
     color: "#BF3434",
-    description: "Uma versão do game lig-4 desenvolvida para web.",
+    description: "Uma versão do game lig-4 desenvolvida para web e inspirada nos filmes de Harry Potter.",
   },
   {
     name: "Labirinto",
@@ -407,7 +423,7 @@ export const projectsMock = [
     deployLink: "",
     color: "#E8E531",
     description:
-      "Api desenvolvida com o propósito simular o fluxo de um api de um blog. A API cria, lista, edita e apaga posts.",
+      "Api desenvolvida com o propósito simular o fluxo de um API de um blog. Com criação, listagem, edição e deleção posts.",
   },
   {
     name: "Vacinação(API)",
@@ -434,10 +450,10 @@ export const projectsMock = [
     deployLink: "",
     color: "#E8E531",
     description:
-      "Api desenvolvida com o propósito de registrar e listar pessoas que tomaram vacina.",
+      "API desenvolvida com o propósito de registrar e listar pessoas que tomaram vacina.",
   },
   {
-    name: "Leads",
+    name: "Leads(API)",
     type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
@@ -463,7 +479,7 @@ export const projectsMock = [
     description: "Um crud simples de usuários",
   },
   {
-    name: "Matriz de eisenhower",
+    name: "Matriz de eisenhower(API)",
     type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
@@ -487,11 +503,11 @@ export const projectsMock = [
     deployLink: "",
     color: "#E8E531",
     description:
-      "Uma api funcional da famosa matriz de eisenhower, uma maneira de se organizar desenvolvida pelo presidente americano Dwight D. Eisenhower.",
+      "Uma (API) funcional da famosa matriz de eisenhower, uma maneira de se organizar desenvolvida pelo presidente americano Dwight D. Eisenhower.",
   },
 
   {
-    name: "Crud de usuários",
+    name: "Crud de usuários(API)",
     type: "Back End",
     logo: "",
     logoSize: { width: 200, height: 60 },
@@ -518,7 +534,7 @@ export const projectsMock = [
     description: "Um CRUD de usuários com nodeJS",
   },
   {
-    name: "API de loja de DVD",
+    name: "Loja de DVDs(API)",
     type: "Back End",
 
     logo: "",
@@ -544,6 +560,6 @@ export const projectsMock = [
     deployLink: "",
     color: "#E8E531",
     description:
-      "Uma api de venda de dvds com autenticação de usuários(admin ou clientes)",
+      "Uma API de venda de dvds com autenticação de usuários(admin ou clientes)",
   },
 ];
