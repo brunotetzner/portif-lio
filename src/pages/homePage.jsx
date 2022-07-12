@@ -33,23 +33,19 @@ export const HomePage = () => {
           w={["100%", "100%", "50%"]}
           flexDirection="column"
           alignItems="center"
+          justifyContent="center"
           pt="1%"
         >
           <Img w="100px" h="100px" src={DevImg} />
 
           <Text color="white.primary" pl="5%" pr="5%" pb="5%" mt="2%">
-            Tecnico em mecatrônica e desenvolvedor Full Stack. Me interesso por
-            tecnologia desde cedo, como toda criança nascida nos anos 2000, mas
-            decidi entrar na área durante a pandemia. O boom das plataformas
-            web/mobile e do mercado de tecnologia em geral foram ainda mais
-            acentuadas nesse periodo. Como moro em uma cidade no interior,
-            diversos serviços que já eram feitos remotamente em grandes
-            metrôpoles, aqui ainda não tinham se tornado um habito, o que mudou
-            a partir de 2020. E isso chamou a atenção para o tempo economizado
-            com longas filas nos banco e a segurança de pagar contas
-            remotamente, em especial nessa época, dentre diversos outros
-            serviços que já eram feitos remotamente, como assistir filmes/séries
-            em serviços de streaming.
+            Técnico em mecatrônica e desenvolvedor Full Stack. Gosto do mercado
+            de tecnologia devido as diversas possibilidades de resolução de
+            problemas. Praticamente tudo demanda tecnologia atualmente, ela nos
+            trás facilidades que poupam nosso tempo e dinheiro. Conhecimentos em
+            programação podem ser aplicados para resolver problemas nas mais
+            diversas áreas, e por isso tenho tanto interesse em trabalhar com
+            tecnologia.
           </Text>
         </Flex>
         <Center
