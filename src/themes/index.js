@@ -39,18 +39,19 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
+        background:
+          "radial-gradient(circle, rgba(45,46,75,1) 0%, rgba(13,14,24,1) 51%, rgba(45,46,75,1) 100%)",
         color: "white.1",
-          '&::-webkit-scrollbar': {
-            width: '4px',
-          },
-          '&::-webkit-scrollbar-track': {
-            width: '6px',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            background: "#7C2492",
-            borderRadius: '24px',
-          },
-        
+        "&::-webkit-scrollbar": {
+          width: "4px",
+        },
+        "&::-webkit-scrollbar-track": {
+          width: "6px",
+        },
+        "&::-webkit-scrollbar-thumb": {
+          background: "#7C2492",
+          borderRadius: "24px",
+        },
       },
     },
   },

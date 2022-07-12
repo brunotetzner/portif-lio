@@ -1,8 +1,20 @@
-import { Box, Button, Flex, Image, Center } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Image,
+  Center,
+  useDisclosure,
+} from "@chakra-ui/react";
 import Logo from "../../assets/images/header-logo.svg";
 import { useNavigate } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
+
+import { ModalHeaderMenu } from "../modalHeaderMenu";
+
 export const Header = () => {
   const navigate = useNavigate();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box
       w="97vw"
@@ -13,7 +25,8 @@ export const Header = () => {
       justifyContent="space-evenly"
       alignItems="center"
     >
-      <Center w="40%">
+      <ModalHeaderMenu isOpen={isOpen} onClose={onClose} />
+      <Center w="40%" display={["none", "none", "inherit", "inherit"]}>
         <Button
           variant="link"
           onClick={() => navigate("/home")}
@@ -23,10 +36,28 @@ export const Header = () => {
           Sobre mim
         </Button>
       </Center>
-      <Center h="100%">
+      <Flex
+        h="100%"
+        w={["100%", "100%", "20%"]}
+        justifyContent={["flex-start", "flex-start", "center"]}
+        pl={["5%", "5%", "0"]}
+      >
         <Image h="100%" src={Logo} />
-      </Center>
-      <Flex w="40%" justifyContent="space-evenly">
+      </Flex>
+      <Button
+        color="white.primary"
+        fontSize="30px"
+        bg="none"
+        display={["inherit", "inherit", "none"]}
+        onClick={onOpen}
+      >
+        <AiOutlineMenu />
+      </Button>
+      <Flex
+        w="40%"
+        display={["none", "none", "inherit", "inherit"]}
+        justifyContent="space-evenly"
+      >
         <Button
           variant="link"
           bg="none"

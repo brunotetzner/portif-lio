@@ -1,12 +1,19 @@
 import { CardProject } from "../components/cardProject";
 import { projectsMock } from "../mocks/projects";
 import { Header } from "../components/header";
-import { Flex, Heading, Box, Radio, RadioGroup, Stack, useToast} from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Box,
+  Radio,
+  RadioGroup,
+  Stack,
+  Select,
+} from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import HeaderImage from "../assets/images/background-header.png";
 
 export const ProjectsPage = () => {
-  const toast = useToast();
   const [typeProject, setTypeProject] = useState("All");
   const [currentProjects, setCurrentProjects] = useState([]);
 
@@ -19,10 +26,8 @@ export const ProjectsPage = () => {
     }
   }, [typeProject]);
 
-
-
   return (
-    <Box background="radial-gradient(circle, rgba(45,46,75,1) 0%, rgba(13,14,24,1) 51%, rgba(45,46,75,1) 100%)">
+    <Box>
       <Box
         maxWidth="100vw"
         display="flex"
@@ -39,11 +44,9 @@ export const ProjectsPage = () => {
           color="white.primary"
           ml="10vw"
         >
-          <Heading fontWeight="light" w="100%" fontSize="80px">
+          <Heading fontWeight="light" w="100%" fontSize={["50px", "80px"]}>
             Projetos
           </Heading>
-   
-         
         </Flex>
         <Box
           w="100%"
@@ -54,7 +57,12 @@ export const ProjectsPage = () => {
           alignItems="center"
           color="white.primary"
         >
-          <RadioGroup onChange={setTypeProject} value={typeProject} w="70%">
+          <RadioGroup
+            onChange={setTypeProject}
+            value={typeProject}
+            w="70%"
+            display={["none", "none", "inherit"]}
+          >
             <Stack direction="row" w="100%">
               <Radio colorScheme="purple" value="All" pl="12%">
                 Tudo
@@ -70,16 +78,34 @@ export const ProjectsPage = () => {
               </Radio>
             </Stack>
           </RadioGroup>
+          <Select
+            display={["inherit", "inherit", "none"]}
+            onChange={(evt) => setTypeProject(evt.target.value)}
+            w="200px"
+          >
+            <option value="All">Tudo</option>
+            <option value="Front End">Front End</option>
+            <option value="Back End">Back End</option>
+            <option value="Full Stack">Full Stack</option>
+          </Select>
         </Box>
       </Box>
       <Flex
         pt="5%"
         color="white.primary"
-        w="95vw"
-        ml="2.5vw"
+        w={["100vw", "95vw"]}
+        ml={["0", "2.5vw"]}
         flexDirection="column"
       >
-        <Box w="100%" display="flex" flexWrap="wrap" justifyContent="space-evenly">
+        <Box
+          w={["auto", "100%"]}
+          marginLeft={["5%", "0"]}
+          display="flex"
+          flexWrap={["", "wrap"]}
+          justifyContent={["", "space-evenly"]}
+          flexDirection={["row", ""]}
+          overflow={["auto", "hidden"]}
+        >
           {currentProjects.map((project) => (
             <CardProject
               name={project.name}

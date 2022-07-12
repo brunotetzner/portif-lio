@@ -26,10 +26,9 @@ export const CardProject = ({
 }) => {
   return (
     <Box
-    _hover={{
-      boxShadow: "-1px 1px 23px 2px #CB7CDF",
-
-    }}
+      _hover={{
+        boxShadow: "-1px 1px 23px 2px #CB7CDF",
+      }}
       w="390px"
       mt="2%"
       ml="2%"
@@ -40,7 +39,7 @@ export const CardProject = ({
       backgroundSize="cover"
     >
       <Flex
-        w="35%"
+        w="135px"
         h="100%"
         bg="black.secondary"
         flexDirection="column"
@@ -68,7 +67,7 @@ export const CardProject = ({
             backgroundPosition="center"
             borderRadius="2px"
             w="125px"
-            ml="1px"
+            // ml="1px"
             h="90px"
           >
             <Box
@@ -100,7 +99,7 @@ export const CardProject = ({
 
         <Flex w="100%" justifyContent="space-around" alignItems="center">
           <Link
-            _hover={{color:"#CB7CDF"}}
+            _hover={{ color: "#CB7CDF" }}
             href={githubLink}
             target="blank"
             bg="none"
@@ -119,7 +118,7 @@ export const CardProject = ({
           </Link>
           {deployLink && (
             <Link
-            _hover={{color:"#CB7CDF"}}
+              _hover={{ color: "#CB7CDF" }}
               href={deployLink}
               target="blank"
               bg="none"
@@ -140,7 +139,7 @@ export const CardProject = ({
         </Flex>
       </Flex>
       <Flex
-        w="65%"
+        w="255px"
         flexDirection="column"
         justifyContent="space-between"
         alignItems="flex-end"
