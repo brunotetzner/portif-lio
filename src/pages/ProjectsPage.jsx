@@ -101,10 +101,10 @@ export const ProjectsPage = () => {
           w={["auto", "100%"]}
           marginLeft={["5%", "0"]}
           display="flex"
-          flexWrap={["", "wrap"]}
-          justifyContent={["", "space-evenly"]}
-          flexDirection={["row", ""]}
-          overflow={["auto", "hidden"]}
+          flexWrap={["", "", "wrap"]}
+          justifyContent={["", "", "space-evenly"]}
+          flexDirection={["row", "row", ""]}
+          overflow={["auto", "auto", "hidden"]}
         >
           {currentProjects.map((project) => (
             <CardProject
